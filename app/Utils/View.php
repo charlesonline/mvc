@@ -47,11 +47,6 @@ class View{
             return '{{'.$item.'}}';
         },$keys);
 
-        // echo '<pre>';
-        // print_r($vars);
-        // echo '</pre>';
-        // exit;
-
         return str_replace($keys,array_values($vars),$contentView);
     }
 }
