@@ -165,6 +165,9 @@ class Response{
             case 'text/html':
                 echo $this->getContent();
                 break;
+            case 'application/json':
+                echo json_encode($this->getContent(),JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+                break;
         }
     }
 }
