@@ -11,7 +11,7 @@ class Organization {
     /**
      * @var string
      */
-    public $name = 'VM Parcerias';
+    public $name = 'CSF';
 
     /**
      * @var string
@@ -21,5 +21,5 @@ class Organization {
     /**
      * @var string
      */
-    public $description = 'Nossa Plataforma Digital VM Parcerias vai entregar para a sua empresa, a INTELIGÊNCIA e a ESTRATÉGIA em forma de aplicativo digital, com integração aos melhores pacotes de benefícios exclusivamente negociamos em nossa REDE DE PARCEIROS CREDENCIADOS.';
+    public $description = 'It`s me Charles!';
 }
