@@ -15,7 +15,7 @@ class Api {
             'nome' => 'Api - CSF',
             'versao' => 'v1.0.0',
             'autor' => 'Charles S Ferreira',
-            'email' => 'ferreiracsf@gmail.com',
+            'email' => 'ferreiracsf@gmail.com'
         ];
     }
 
