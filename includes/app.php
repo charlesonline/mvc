@@ -47,11 +47,12 @@ View::init([
 
 //DEFINE O MAPEAMENTO DE MIDDLEWARE
 MiddlewareQueue::setMap([
-    'maintenance' => \App\Http\Middleware\Maintenance::class,
+    'maintenance'           => \App\Http\Middleware\Maintenance::class,
     'required-admin-logout' => \App\Http\Middleware\RequireAdminLogout::class,
-    'required-admin-login' => \App\Http\Middleware\RequireAdminLogin::class,
-    'api' => \App\Http\Middleware\Api::class,
-    'user-basic-auth' => \App\Http\Middleware\UserBasicAuth::class
+    'required-admin-login'  => \App\Http\Middleware\RequireAdminLogin::class,
+    'api'                   => \App\Http\Middleware\Api::class,
+    'user-basic-auth'       => \App\Http\Middleware\UserBasicAuth::class,
+    'jwt-auth'              => \App\Http\Middleware\JWTAuth::class
 ]);
 
 //DEFINE O MAPEAMENTO DE MIDDLEWARE PADRÕES
