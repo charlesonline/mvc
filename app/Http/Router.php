@@ -103,6 +103,9 @@ class Router{
             $route = preg_replace($patternVariable,'(.*?)',$route);
             $params['variables'] = $matches[1];
         }
+
+        //REMOVE  A BARRA NO FINAL DA ROTA
+        $route = rtrim($route,'/');
         
         //PADRÃO DE VALIDAÇÃO DE URL
         $patternRoute = '/^'.str_replace('/','\/',$route).'$/';
