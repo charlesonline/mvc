@@ -22,7 +22,8 @@ class Login extends Page {
 
         //CONTEUDO DA PÁGINA DE LOGIN
         $content = View::render('admin/login',[
-            'status' => $status
+            'status' => $status,
+            'url' => getenv('URL')
         ]);
 
         //RETORNA A PÁGINA COMPLETA
